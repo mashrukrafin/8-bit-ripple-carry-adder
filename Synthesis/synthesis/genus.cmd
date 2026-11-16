@@ -1,0 +1,9 @@
+# Cadence Genus(TM) Synthesis Solution, Version 16.13-s036_1, built Dec 20 2016
+
+# Date: Tue Sep 29 03:35:13 2026
+# Host: vlsiserver2 (x86_64 w/Linux 3.10.0-1062.4.1.el7.x86_64) (8cores*32cpus*Intel(R) Xeon(R) CPU E5-2620 v4 @ 2.10GHz 20480KB)
+# OS:   CentOS Linux release 7.7.1908 (Core)
+
+source rc_script.tcl
+vi rc_script.tcl
+exit

@@ -1,0 +1,45 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2016 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+Version: 16.13-s036_1, built Tue Dec 20 2016
+Options: -legacy_ui -files rc_script.tcl 
+Date:    Tue Sep 29 03:43:14 2026
+Host:    vlsiserver2 (x86_64 w/Linux 3.10.0-1062.4.1.el7.x86_64) (8cores*32cpus*Intel(R) Xeon(R) CPU E5-2620 v4 @ 2.10GHz 20480KB) (131761996KB)
+OS:      CentOS Linux release 7.7.1908 (Core)
+
+Checking out license: Genus_Synthesis
+
+Loading tool scripts...
+Finished loading tool scripts (27 seconds elapsed).
+
+Sourcing rc_script.tcl...
+  Setting attribute of root '/': 'lib_search_path' = ../lib/
+Warning : This attribute will be obsolete in a next major release. [TUI-32]
+        : attribute: 'hdl_search_path', object type: 'root'
+        : Attribute 'hdl_search_path' is going to be obsoleted, use the new attribute 'init_hdl_search_path'.
+  Setting attribute of root '/': 'hdl_search_path' = ../rtl/
+
+  Message Summary for Library slow.lib:
+  *************************************
+  Could not find an attribute in the library. [LBR-436]: 639
+  Missing a function attribute in the output pin definition. [LBR-518]: 1
+  An unsupported construct was detected in this library. [LBR-40]: 1
+  *************************************
+ 
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 1.620000, 125.000000) in library 'slow.lib'.
+        : The nominal operating condition represents either the nominal PVT values if specified in the library source, or the default PVT values (1.0, 1.0, 1.0).
+  Setting attribute of root '/': 'library' = slow.lib
+Warning : Cannot open file. [VLOGPT-650]
+        : File 'cntr8bit.v'.
+        : The specified file could not be opened.  Check the value of the init_hdl_search_path attribute.
+Error: Unable to open ../constraints/cntr8bit.sdc
+Failed on read_sdc
+Encountered problems processing file: rc_script.tcl
+WARNING: This version of the tool is 3570 days old.
+
+Another Ctrl-C within 1 second will terminate the tool.
+legacy_genus:/> exit
+Normal exit.
