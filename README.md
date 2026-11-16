@@ -49,7 +49,7 @@ A Ripple Carry Adder is a combinational digital circuit that performs binary add
 The following waveforms demonstrate the functional verification of the 8-bit Ripple Carry Adder.
 
 ### Waveform 1
-![Simulation Waveform 1](https://raw.githubusercontent.com/mashrukrafin/8-bit-ripple-carry-adder/main/waveforms/image021.png)
+![Simulation Waveform 1](https://raw.githubusercontent.com/mashrukrafin/8-bit-ripple-carry-adder/waveforms/image021.png)
 
 ### Waveform 2
 ![Simulation Waveform 2](https://raw.githubusercontent.com/mashrukrafin/8-bit-ripple-carry-adder/main/waveforms/image031.png)
