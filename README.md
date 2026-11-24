@@ -51,10 +51,10 @@ The following waveforms demonstrate the functional verification of the 8-bit Rip
 ### Waveform 1
 ![Simulation Waveform 1](https://raw.githubusercontent.com/mashrukrafin/8-bit-ripple-carry-adder/main/Waveforms/image029.png)
 
-### Waveform 2
+### Display Output
 ![Simulation Waveform 2](https://raw.githubusercontent.com/mashrukrafin/8-bit-ripple-carry-adder/main/Waveforms/image031.png)
 
-### Waveform 3
+### Synthesized Block
 ![Simulation Waveform 3](https://raw.githubusercontent.com/mashrukrafin/8-bit-ripple-carry-adder/main/Waveforms/image033.png)
 
 ## Synthesis Results
