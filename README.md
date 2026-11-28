@@ -1,53 +1,104 @@
-# 8-Bit Ripple Carry Adder
+8-Bit Universal Shift Register
 
-## Project Overview
+Project Overview
 
-This project focuses on the RTL design, functional simulation, and logic synthesis of an **8-bit Ripple Carry Adder (RCA)** using Verilog HDL and Cadence EDA tools.
+This project focuses on the RTL design, functional simulation, and logic synthesis of an 8-bit Universal Shift Register using Verilog HDL and Cadence Genus.
 
-A Ripple Carry Adder is a combinational digital circuit that performs binary addition of two 8-bit operands. It consists of cascaded full-adder stages, where the carry output of each stage propagates to the next stage.
+The design supports four operating modes: hold, shift right, shift left, and parallel load. It is implemented using structural Verilog.
 
-## Project Objectives
+Project Objectives
 
-- Design an 8-bit Ripple Carry Adder using Verilog HDL.
-- Implement the design using cascaded full-adder stages.
-- Verify functionality through simulation.
-- Analyze sum and carry propagation using waveform results.
-- Perform logic synthesis using Cadence tools.
+Design an 8-bit Universal Shift Register using Verilog HDL.
 
-## Design Specifications
+Implement four operating modes.
 
-**Inputs:**
-- A[7:0] — First 8-bit operand
-- B[7:0] — Second 8-bit operand
-- Cin — Carry input
+Verify functionality through RTL simulation.
 
-**Outputs:**
-- Sum[7:0] — 8-bit addition result
-- Cout — Final carry output
+Perform logic synthesis using Cadence Genus.
 
-## Tools and Technologies
+Design Specifications
 
-- Verilog HDL
-- Cadence EDA tools
-- RTL Design
-- Functional Simulation
-- Logic Synthesis
+Inputs:
 
-## Repository Structure
+D[7:0] — 8-bit parallel data input
 
-| Directory / File | Description |
-|---|---|
-| `constraints/` | Synthesis constraints |
-| `RTL/` | Verilog HDL design files |
-| `synthesis/` | Synthesis scripts and results |
-| `waveforms/` | Simulation waveform screenshots |
-| `lib/` | Technology library files |
-| `Project Report.pdf` | Complete project report |
+S[1:0] — Mode selection
 
-## Simulation Results
+CLK — Clock input
 
-The following waveforms demonstrate the functional verification of the 8-bit Ripple Carry Adder.
+RESET — Active-low reset
 
+Output:
+
+Q[7:0] — 8-bit register output
+
+Operating Modes:
+
+S[1:0]
+
+Operation
+
+00
+
+Hold
+
+01
+
+Shift Right
+
+10
+
+Shift Left
+
+11
+
+Parallel Load
+
+Tools and Technologies
+
+Verilog HDL
+
+Cadence Genus 16.13
+
+RTL Design
+
+Functional Simulation
+
+Logic Synthesis
+
+Repository Structure
+
+Directory / File
+
+Description
+
+constraints/
+
+Synthesis constraints
+
+RTL/
+
+Structural Verilog design files
+
+synthesis/
+
+Synthesis scripts and results
+
+waveforms/
+
+RTL simulation waveform screenshots
+
+lib/
+
+Technology library files
+
+Project Report.pdf
+
+Project documentation
+
+Simulation Results
+
+RTL simulation was performed to verify the four operating modes: hold, shift right, shift left, and parallel load.
 ### Waveform 1
 ![Simulation Waveform 1](https://raw.githubusercontent.com/mashrukrafin/8-bit-ripple-carry-adder/main/Waveforms/image029.png)
 
