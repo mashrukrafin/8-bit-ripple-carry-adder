@@ -61,12 +61,12 @@ RTL simulation was performed to verify the four operating modes: hold, shift rig
 ### Display Output
 ![Simulation Waveform 2](https://raw.githubusercontent.com/mashrukrafin/8-bit-ripple-carry-adder/main/Waveforms/image031.png)
 
-### Synthesized Block
-![Simulation Waveform 3](https://raw.githubusercontent.com/mashrukrafin/8-bit-ripple-carry-adder/main/Waveforms/image033.png)
-
 ## Synthesis Results
 
 The design was synthesized using Cadence tools as part of the digital hardware implementation process.
+### Synthesized Block
+![Simulation Waveform 3](https://raw.githubusercontent.com/mashrukrafin/8-bit-ripple-carry-adder/main/Waveforms/image033.png)
+
 
 ## Project Documentation
 
