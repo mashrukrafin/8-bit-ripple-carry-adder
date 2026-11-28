@@ -1,102 +1,58 @@
-8-Bit Universal Shift Register
+# 8-Bit Universal Shift Register
 
-Project Overview
+## Project Overview
 
-This project focuses on the RTL design, functional simulation, and logic synthesis of an 8-bit Universal Shift Register using Verilog HDL and Cadence Genus.
+This project focuses on the RTL design, functional simulation, and logic synthesis of an **8-bit Universal Shift Register** using Verilog HDL and Cadence Genus.
 
 The design supports four operating modes: hold, shift right, shift left, and parallel load. It is implemented using structural Verilog.
 
-Project Objectives
+## Project Objectives
 
-Design an 8-bit Universal Shift Register using Verilog HDL.
+- Design an 8-bit Universal Shift Register using Verilog HDL.
+- Implement four operating modes.
+- Verify functionality through RTL simulation.
+- Perform logic synthesis using Cadence Genus.
 
-Implement four operating modes.
+## Design Specifications
 
-Verify functionality through RTL simulation.
+**Inputs:**
+- `D[7:0]` — 8-bit parallel data input
+- `S[1:0]` — Mode selection
+- `CLK` — Clock input
+- `RESET` — Active-low reset
 
-Perform logic synthesis using Cadence Genus.
+**Output:**
+- `Q[7:0]` — 8-bit register output
 
-Design Specifications
+**Operating Modes:**
 
-Inputs:
+| S[1:0] | Operation |
+|:---:|---|
+| 00 | Hold |
+| 01 | Shift Right |
+| 10 | Shift Left |
+| 11 | Parallel Load |
 
-D[7:0] — 8-bit parallel data input
+## Tools and Technologies
 
-S[1:0] — Mode selection
+- Verilog HDL
+- Cadence Genus 16.13
+- RTL Design
+- Functional Simulation
+- Logic Synthesis
 
-CLK — Clock input
+## Repository Structure
 
-RESET — Active-low reset
+| Directory / File | Description |
+|---|---|
+| `constraints/` | Synthesis constraints |
+| `RTL/` | Structural Verilog design files |
+| `synthesis/` | Synthesis scripts and results |
+| `waveforms/` | RTL simulation waveform screenshots |
+| `lib/` | Technology library files |
+| `Project Report.pdf` | Project documentation |
 
-Output:
-
-Q[7:0] — 8-bit register output
-
-Operating Modes:
-
-S[1:0]
-
-Operation
-
-00
-
-Hold
-
-01
-
-Shift Right
-
-10
-
-Shift Left
-
-11
-
-Parallel Load
-
-Tools and Technologies
-
-Verilog HDL
-
-Cadence Genus 16.13
-
-RTL Design
-
-Functional Simulation
-
-Logic Synthesis
-
-Repository Structure
-
-Directory / File
-
-Description
-
-constraints/
-
-Synthesis constraints
-
-RTL/
-
-Structural Verilog design files
-
-synthesis/
-
-Synthesis scripts and results
-
-waveforms/
-
-RTL simulation waveform screenshots
-
-lib/
-
-Technology library files
-
-Project Report.pdf
-
-Project documentation
-
-Simulation Results
+## Simulation Results
 
 RTL simulation was performed to verify the four operating modes: hold, shift right, shift left, and parallel load.
 ### Waveform 1
